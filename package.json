@@ -1,0 +1,14 @@
+{
+  "name": "anti-swear-words-packages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "ookamicodes",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
