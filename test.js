@@ -11,4 +11,4 @@ client.on('ready', () => {
 
 
 
-client.login('NzYxOTM5NjI2ODkyOTg0MzIx.X3h5kw.GjFrovrqwUwWIIADLy_-029rzWY');
+client.login('token');
