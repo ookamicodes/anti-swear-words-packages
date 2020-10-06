@@ -14,15 +14,17 @@ const Discord = require('discord.js')                               //discord.js
 const client = new Discord.Client();                                //discord client
 const antiSwearWords = require("anti-swear-words-packages-discord") //my module
 
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`)                 //console log when ready
-});
+})
 
 client.on('message', async message => {
-antiSwearWords();                                   //module function
-}
+antiSwearWords(client, message);                                   //module function
+})
 
-client.login("token")                                               //client login
+client.login(token)                                               //client login
+
 
 ```
 
