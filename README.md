@@ -2,7 +2,7 @@
 
 <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/ookamicodes/anti-swear-words-packages"> <img alt="npm" src="https://img.shields.io/npm/v/anti-swear-words-packages-discord"> <img alt="npm" src="https://img.shields.io/npm/dw/anti-swear-words-packages-discord">
 
-[![NPM][npm-icon]][https://nodei.co/npm/anti-swear-words-packages-discord/]
+<img src="https://nodei.co/npm/anti-swear-words-packages-discord/">
 
 Add the Anti Swear Word Module in your bot to filter every swear word out.
 
