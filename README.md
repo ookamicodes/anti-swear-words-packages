@@ -8,9 +8,24 @@ Add the Anti Swear Word Module in your bot to filter every swear word out.
 npm install anti-swear-words-packages-discord
 ```
 
-In main file:
+### Example
 ```
-var antiSwearWordsPackagesDiscord = require("anti-swear-words-packages-discord")
+const Discord = require('discord.js')                               //discord.js
+const client = new Discord.Client();                                //discord client
+const antiSwearWords = require("anti-swear-words-packages-discord") //my module
 
-new antiSwearWordsPackagesDiscord();
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`)                 //console log when ready
+});
+
+client.on('message', async message => {
+antiSwearWords(client, options);                                   //module function
+}
+
+client.login("token")                                               //client login
+
 ```
+
+## Support
+
+Join the support server: [CLICK ME](https://discord.gg/FGzCdtP)
