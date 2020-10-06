@@ -9,6 +9,6 @@ for (var i in swearWord){
 
 if (foundInTextWord){
     message.delete();
-    message.channel.send(`@${message.author.tag} dont use swear words!`)
+    message.channel.send(`<@${message.author.id}> dont use swear words!`)
 }
 }
