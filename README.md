@@ -19,7 +19,7 @@ client.on('ready', () => {
 });
 
 client.on('message', async message => {
-antiSwearWords(client, options);                                   //module function
+antiSwearWords();                                   //module function
 }
 
 client.login("token")                                               //client login
