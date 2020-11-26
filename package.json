@@ -1,6 +1,6 @@
 {
   "name": "anti-swear-words-packages-discord",
-  "version": "1.1.0",
+  "version": "1.1.12",
   "description": "Add the Anti Swear Word Module in your bot to filter every swear word out.",
   "main": "index.js",
   "dependencies": {
@@ -20,8 +20,11 @@
     "url": "https://github.com/ookamicodes/anti-swear-words-packages/issues"
   },
   "homepage": "https://github.com/ookamicodes/anti-swear-words-packages#readme",
-   "keywords": ["discord", "filter", "anti-swear-word", "discord.js", "discord-bot"]
+  "keywords": [
+    "discord",
+    "filter",
+    "anti-swear-word",
+    "discord.js",
+    "discord-bot"
+  ]
 }
-
-
-

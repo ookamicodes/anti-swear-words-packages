@@ -19,20 +19,25 @@ const Discord = require('discord.js')                               //discord.js
 const client = new Discord.Client();                                //discord client
 const antiSwearWords = require("anti-swear-words-packages-discord") //my module
 
-
+// console log when ready
 client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`)                 //console log when ready
+    console.log(`Logged in as ${client.user.tag}!`)                  
 })
 
+// Module Setup
 client.on('message', async message => {
-antiSwearWords(client, message);                                   //module function
-})
+        antiSwearWords(client, message, {
+            warnMSG: `<@${message.author.id}> No.` //warn message option
+        });
+                             
+});
 
-client.login(token)                                               //client login
+// Client Login
+client.login(token)                                               
 
 
 ```
 
 ## Support
 
-Join the support server: [CLICK ME](https://discord.gg/FGzCdtP)
+Join the support server: [CLICK ME](https://discord.gg/BfXR36R8Gq)
