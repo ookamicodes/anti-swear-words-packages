@@ -27,7 +27,7 @@ client.on('ready', () => {
 // Module Setup
 client.on('message', async message => {
         antiSwearWords(client, message, {
-            warnMSG: `<@${message.author.id}> No.` //warn message option
+            warnMSG: `Your Message` // warn message option || when not then = `<@${message.author.id}> dont use swear words.`
         });
                              
 });
