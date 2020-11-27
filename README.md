@@ -13,6 +13,14 @@ Add the Anti Swear Word Module in your bot to filter every swear word out.
 npm install anti-swear-words-packages-discord
 ```
 
+## Usage
+
+```
+antiSwearWords(client, message, {
+            warnMSG: `Your Warn Message` // warn message option || when not then = `<@${message.author.id}> dont use swear words.`
+        });
+```
+
 ### Example
 ```
 const Discord = require('discord.js')                               //discord.js
