@@ -16,6 +16,8 @@ npm install anti-swear-words-packages-discord
 ## Usage
 
 ```
+const antiSwearWords = require("anti-swear-words-packages-discord")
+
 antiSwearWords(client, message, {
             warnMSG: `Your Warn Message` // warn message option || when not then = `<@${message.author.id}> dont use swear words.`
         });
