@@ -9,22 +9,25 @@ Add the Anti Swear Word Module in your bot to filter every swear word out.
 
 ## Install
 
-```js
+```css
 npm install anti-swear-words-packages-discord
 ```
 
-## Usage
+## Usage Example
 
-```
+```javascript
 const antiSwearWords = require("anti-swear-words-packages-discord")
 
-antiSwearWords(client, message, {
-            warnMSG: `Your Warn Message` // warn message option || when not then = `<@${message.author.id}> dont use swear words.`
+        antiSwearWords(client, message, {
+            customWord: ["aCustomWord", "anotherCustomWord"],
+            warnMSG: `<@${message.author.id}> , why are you writing this?`, // warn message option || when not then = `<@${message.author.id}> dont use swear words.`
+            ignoreWord: ["ignoreThis", "andignoreThis", "alsoIgnoreThis"]
         });
+                             
 ```
 
 ### Example
-```
+```javascript
 const Discord = require('discord.js')                               //discord.js
 const client = new Discord.Client();                                //discord client
 const antiSwearWords = require("anti-swear-words-packages-discord") //my module
@@ -36,8 +39,10 @@ client.on('ready', () => {
 
 // Module Setup
 client.on('message', async message => {
-        antiSwearWords(client, message, {
-            warnMSG: `Your Message` // warn message option || when not then = `<@${message.author.id}> dont use swear words.`
+            antiSwearWords(client, message, {
+            customWord: ["aCustomWord", "anotherCustomWord"],
+            warnMSG: `<@${message.author.id}> , why are you writing this?`, // warn message option || when not then = `<@${message.author.id}> dont use swear words.`
+            ignoreWord: ["ignoreThis", "andignoreThis", "alsoIgnoreThis"]
         });
                              
 });

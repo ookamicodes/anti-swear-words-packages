@@ -4,7 +4,9 @@ module.exports = (client, message, options) => {
 
 const discord = require("discord.js");
 
- const warnMSG = (options && options.warnMSG) || `<@${message.author.id}> dont use swear words!`;
+ let warnMSG = (options && options.warnMSG) || `<@${message.author.id}> dont use swear words!`;
+ let customWord = (options && options.customWord) || ["aSuperCoolerCustomPlaceHolder", "aOtheraSuperCoolerCustomPlaceHolder" ];
+ let ignoreWord = (options && options.ignoreWord) || ["aooCusPlHor", "aSCorCuPlaeer" ];
  
   
  
@@ -18,6 +20,12 @@ for (var i in ENW){
 }
 for (var i in DEW){
     if (message.content.toLowerCase().includes(DEW[i].toLowerCase())) foundInTextWord = true;
+}
+for (var i in customWord){
+    if (message.content.toLowerCase().includes(customWord[i].toLowerCase())) foundInTextWord = true;
+}
+for (var i in ignoreWord){
+    if (message.content.toLowerCase().includes(ignoreWord[i].toLowerCase())) foundInTextWord = false;
 }
 
 if (foundInTextWord){
