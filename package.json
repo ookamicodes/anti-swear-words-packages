@@ -1,10 +1,11 @@
 {
   "name": "anti-swear-words-packages-discord",
-  "version": "1.1.23",
+  "version": "1.1.30",
   "description": "Add the Anti Swear Word Module in your bot to filter every swear word out.",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "^12.3.1"
+    "discord.js": "^12.3.1",
+    "quick.db": "^7.1.3"
   },
   "devDependencies": {},
   "scripts": {
