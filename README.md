@@ -1,4 +1,4 @@
-# Anti Swear Words Module
+# Anti Swear Words Package
 
  <a href="https://nodei.co/npm/anti-swear-words-packages-discord/"><img src="https://nodei.co/npm/anti-swear-words-packages-discord.png?downloads=true&stars=true" alt="npm installnfo" /></a>
 
@@ -6,7 +6,7 @@
 
 
 Add the Anti Swear Word Module in your bot to filter every swear word out.
-
+If you need help or have suggestions, please look in our Discord server. [CLICK ME TO JOIN](https://discord.gg/FGzCdtP)
 ## Install
 
 ```css
@@ -22,9 +22,9 @@ const antiSwearWords = require("anti-swear-words-packages-discord")
             warnMSG: `<@${message.author.id}> , why are you writing this?`, 
             // warn message option || when not then = `<@${message.author.id}> dont use swear words.` 
             // Behind the warnMSG will be an Warn Count
-            ignoreWord: ["ignoreThis", "andignoreThis", "alsoIgnoreThis"],
-            customWord: ["aCustomWord", "anotherCustomWord"],
-            muteRole: "ROLE ID",  // ID of the Role
+            ignoreWord: ["ignoreThis", "andIgnoreThis", "alsoIgnoreThis"],
+            customWord: ["aCustomWord", "anOtherCustomWord"],
+            muteRole: "ROLE NAME",  // ID of the Role
             muteCount: 10,        // Number when the user get muted
             kickCount: 20,        // Number when the user get kicked
             banCount: 30,         // Number when the user get banned
@@ -45,17 +45,17 @@ client.on('ready', () => {
 
 // Module Setup
 client.on('message', async message => {
-           antiSwearWords(client, message, {
+        antiSwearWords(client, message, {
             warnMSG: `<@${message.author.id}> , why are you writing this?`, 
             // warn message option || when not then = `<@${message.author.id}> dont use swear words.` 
-            // Behind the warnMSG will be an Warn Count.
-            ignoreWord: ["ignoreThis", "andignoreThis", "alsoIgnoreThis"],
-            customWord: ["aCustomWord", "anotherCustomWord"],
-            muteRole: "ROLE ID",  // ID of the Role
+            // Behind the warnMSG will be an Warn Count
+            ignoreWord: ["ignoreThis", "andIgnoreThis", "alsoIgnoreThis"],
+            customWord: ["aCustomWord", "anOtherCustomWord"],
+            muteRole: "ROLE NAME",  // ID of the Role
             muteCount: 10,        // Number when the user get muted
             kickCount: 20,        // Number when the user get kicked
             banCount: 30,         // Number when the user get banned
-        });                         
+        });                       
 });
 
 // Client Login
@@ -70,6 +70,13 @@ We use [quick.db](https://www.npmjs.com/package/quick.db) as a better-sqlite3 da
 
 Docs: https://quickdb.js.org
 
+## Changelog
+
+**1.2.33:** Readme updated
+**1.2.32:** No action to admin
+**1.2.31:** Fix
+**1.2.30:** Warn System
+
 ## Support
 
-Join the support server: [CLICK ME](https://discord.gg/BfXR36R8Gq)
+Join the support server: [CLICK ME](https://discord.gg/FGzCdtP)
