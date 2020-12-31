@@ -72,12 +72,12 @@ Docs: https://quickdb.js.org
 
 ## Changelog
 
-**1.2.37** 'Null' DB Fix
-**1.2.34 - .36**  Some little fixes
-**1.2.33:** Readme updated
-**1.2.32:** No action to admin
-**1.2.31:** Fix
-**1.2.30:** Warn System
+- **1.2.37** 'Null' DB Fix
+- **1.2.34 - .36**  Some little fixes
+- **1.2.33:** Readme updated
+- **1.2.32:** No action to admin
+- **1.2.31:** Fix
+- **1.2.30:** Warn System
 
 ## Support
 
