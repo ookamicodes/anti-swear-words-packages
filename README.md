@@ -72,6 +72,7 @@ Docs: https://quickdb.js.org
 
 ## Changelog
 
+- **1.2.40** Warn count fix
 - **1.2.37** 'Null' DB Fix
 - **1.2.34 - .36**  Some little fixes
 - **1.2.33:** Readme updated
