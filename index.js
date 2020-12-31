@@ -37,7 +37,7 @@ for (var i in ignoreWord){
 
 if (foundInTextWord){
    if(message.member.hasPermission("ADMINISTRATOR")) return;
-      data = data.add(`warnings_${message.guild.id}_${user}`, 1)
+      warnCount = data.add(`warnings_${message.guild.id}_${user}`, 1)
           message.delete();
               message.channel.send(`${warnMSG} | You got **${warnCount}** warning(s)!`)
        if(warnCount === muteCount) {
