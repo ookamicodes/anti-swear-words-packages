@@ -24,7 +24,7 @@ const antiSwearWords = require("anti-swear-words-packages-discord")
             // Behind the warnMSG will be an Warn Count
             ignoreWord: ["ignoreThis", "andIgnoreThis", "alsoIgnoreThis"],
             customWord: ["aCustomWord", "anOtherCustomWord"],
-            muteRole: "ROLE NAME",  // ID of the Role
+            muteRole: "ROLE NAME",  // Name of the Role
             muteCount: 10,        // Number when the user get muted
             kickCount: 20,        // Number when the user get kicked
             banCount: 30,         // Number when the user get banned
@@ -51,7 +51,7 @@ client.on('message', async message => {
             // Behind the warnMSG will be an Warn Count
             ignoreWord: ["ignoreThis", "andIgnoreThis", "alsoIgnoreThis"],
             customWord: ["aCustomWord", "anOtherCustomWord"],
-            muteRole: "ROLE NAME",  // ID of the Role
+            muteRole: "ROLE NAME",  // Name of the Role
             muteCount: 10,        // Number when the user get muted
             kickCount: 20,        // Number when the user get kicked
             banCount: 30,         // Number when the user get banned
@@ -72,6 +72,7 @@ Docs: https://quickdb.js.org
 
 ## Changelog
 
+- **2.0.0** Big Update
 - **1.2.42** Local DB Fix
 - **1.2.40** Warn count fix
 - **1.2.37** 'Null' DB Fix
